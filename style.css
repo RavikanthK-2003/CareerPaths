@@ -133,35 +133,25 @@ nav {
   border-color: var(--primary-color);
 }
 
-/* .btn {
-  padding: 0.75rem 1.5rem;
-  outline: none;
-  border: none;
-  font-size: 1rem;
-  font-weight: 600;
-  white-space: nowrap;
-  color: var(--white);
-  background-color: var(--primary-color);
-  border-radius: 5px;
-  cursor: pointer;
-  transition: 0.3s;
+
+.section_body p {
+    margin-bottom: 4rem;
+    margin-inline: auto;
+    font-size: 1.3rem;
+    color: var(--text-dark);
 }
 
-.btn:hover {
-  background-color: var(--primary-color-dark);
+.side_side {
+    width: 100%;
+    overflow: auto; 
+    text-align: center; 
 }
 
-.badge {
-  position: absolute;
-  top: 1rem;
-  left: 1rem;
-  padding: 2px 15px;
-  font-size: 0.9rem;
-  font-weight: 600;
-  color: var(--primary-color);
-  background-color: #f0c8c9;
-  border-radius: 1rem;
-} */
+.section_body_left, .section_body_right {
+    width: 40%; 
+    margin: 30px;
+    float: left;
+}
 
 img {
   display: flex;
