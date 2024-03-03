@@ -1,19 +1,3 @@
-const menuBtn = document.getElementById("menu-btn");
-const navLinks = document.getElementById("nav-links");
-const menuBtnIcon = menuBtn.querySelector("i");
-
-menuBtn.addEventListener("click", (e) => {
-  navLinks.classList.toggle("open");
-
-  const isOpen = navLinks.classList.contains("open");
-  menuBtnIcon.setAttribute("class", isOpen ? "ri-close-line" : "ri-menu-line");
-});
-
-navLinks.addEventListener("click", (e) => {
-  navLinks.classList.remove("open");
-  menuBtnIcon.setAttribute("class", "ri-menu-line");
-});
-
 const scrollRevealOption = {
   distance: "50px",
   origin: "bottom",
@@ -21,28 +5,23 @@ const scrollRevealOption = {
 };
 
 // header container
-ScrollReveal().reveal(".header__container h1", {
+ScrollReveal().reveal(".header_container h1", {
   ...scrollRevealOption,
 });
 
-ScrollReveal().reveal(".header__container p", {
+ScrollReveal().reveal(".sub_content", {
   ...scrollRevealOption,
   delay: 500,
 });
 
-ScrollReveal().reveal(".header__container form", {
+// trending container
+ScrollReveal().reveal(".trending_card", {
   ...scrollRevealOption,
-  delay: 1000,
+  interval: 500,
 });
 
-ScrollReveal().reveal(".header__container a", {
+//  client container
+ScrollReveal().reveal(".client_card", {
   ...scrollRevealOption,
-  delay: 1500,
-});
-
-const swiper = new Swiper(".swiper", {
-  loop: true,
-  pagination: {
-    el: ".swiper-pagination",
-  },
+  interval: 500,
 });
