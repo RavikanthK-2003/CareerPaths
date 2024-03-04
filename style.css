@@ -36,26 +36,17 @@ body {
 
 nav {
   max-width: var(--max-width);
-  padding: 2rem 1rem;
+  padding: 2rem 2rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 30px;
-}
-
-.navbar {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  max-width: var(--max-width);
-  overflow: hidden;
-  background-color: #333;
 }
 
 .nav_logo a {
   font-size: 1.2rem;
   font-weight: 600;
   color: var(--white);
+  padding-left: 20px;
 }
 
 .nav_links {
@@ -179,6 +170,8 @@ a {
 .trending_card img {
   margin-bottom: 1rem;
   border-radius: 10px;
+  height: 200px;
+  width: 100%;
 }
 
 .trending_card p {
@@ -329,13 +322,13 @@ textarea {
 }
 
 input[type="submit"] {
-  background-color: #4caf50;
+  background-color: var(--text-light);
   color: #fff;
   cursor: pointer;
 }
 
 input[type="submit"]:hover {
-  background-color: #45a049;
+  background-color: var(--primary-color);
 }
 
 .footer_container {
