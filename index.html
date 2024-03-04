@@ -4,13 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet" />
-    <link rel="stylesheet" href="style.css" />
     <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="style.css" />
     <title>CareerPaths</title>
   </head>
   <body>
     <header class="header">
-        <nav>
+        <nav class="navbar">
             <div class="nav_logo"><a href="#">CareerPaths</a></div>
             <ul class="nav_links">
                 <li class="link"><a href="#">Home</a></li>
@@ -20,7 +20,7 @@
                 <li class="link"><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-        <div class="section_container header_container" id="home">
+        <div class="section_container header_container">
             <h1>Explore the beauty of Learning Choose your CareerPath</h1>
             <p class="sub_content">Make your first move from here...</p>
         </div>
@@ -33,34 +33,16 @@
         </div>
         <div class="about_grid">
             <div class="section_body">
-                <h1>About <span>Your E-Learning Platform Name</span></h1>
-                <p>Welcome to <span>Your E-Learning Platform Name</span>, where knowledge meets innovation. We are a dedicated
+                <h2>About CareerPath</h2>
+                <p>Welcome to CareerPath, where knowledge meets innovation. We are a dedicated
                 team of educators, technologists, and enthusiasts committed to transforming the way people learn and
                 grow.</p>
                 <h2>Our Mission</h2>
-                <p>At <span>Your E-Learning Platform Name</span>, our mission is to empower individuals worldwide with
+                <p>At CareerPath, our mission is to empower individuals worldwide with
                 accessible, high-quality education. We believe that everyone deserves the opportunity to learn and
                 develop their skills, regardless of geographical or socioeconomic barriers. Through cutting-edge
                 technology and a passion for learning, we aim to revolutionize the educational experience for learners
                 of all ages.</p>
-                <div class="side_side">
-                    <div class="section_body_left">
-                        <h2>What Sets Us Apart</h2>
-                        <ul>
-                            <li><strong>Comprehensive Course Catalog:</strong> <p>Explore a diverse range of courses meticulously
-                                curated to cater to various interests and skill levels.</p></li>
-                            <li><strong>Expert Instructors:</strong><p>Learn from industry experts and seasoned professionals who
-                                bring real-world experience to the virtual classroom.</p></li>
-                            <li><strong>Interactive Learning Environment:</strong><p>Immerse yourself in an interactive and dynamic
-                                learning environment.</p></li>
-                            <li><strong>Flexible Learning Paths:</strong> <p>Tailor your learning journey to your schedule and pace.</li>
-                            <li><strong>Cutting-Edge Technology:</strong> <p>Stay at the forefront of educational technology with our
-                                state-of-the-art learning platform.</p></li>
-                        </ul>
-                    </div>
-                    <div class="section_body_right">
-                        <img src="assets/img/learn.jpg" alt="elearning image" />
-                    </div>
                 </div>
             </div>
         </div>
@@ -232,6 +214,26 @@
     </div>
     </section>
 
+    <!-- Contact section -->
+    <section class="section_container courses_container" id="contact">
+      <div class="section_header">
+          <h2 class="section_title">Contact Us</h2>
+      </div>
+      <div class="form">
+        <form action="#" method="post" id="contactForm">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+
+          <input type="submit" value="Submit">
+      </form>
+      </div>
+      </section>
 
       <!-- Feedbacks section -->
     <section class="section_container client_container" id="client">
@@ -250,22 +252,17 @@
               <span><i class="ri-star-fill"></i></span>
               <span><i class="ri-star-fill"></i></span>
               <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
               <span><i class="ri-star-half-fill"></i></span>
-              <span><i class="ri-star-line"></i></span>
             </div>
           </div>
           <p>
-            I had the most incredible experience using this tour and travel
-            website. From booking my flights and accommodations to discovering
-            unique local activities, everything was seamless and well-organized.
-            It made my trip stress-free and unforgettable. I can't wait to plan
-            my next adventure with them!
+            While the course content is excellent, it would be great to have more advanced-level courses in certain categories. Additionally, providing more hands-on projects would enhance the practical application of the knowledge gained
           </p>
           <div class="client_card_footer">
-            <img src="assets/client-1.jpg" alt="client" />
+            <i class="ri-user-3-fill"></i>
             <div class="client_details">
-              <h4>Mike Henderson</h4>
-              <p>Business Manager & CEO</p>
+              <h4>Robert Downey jr</h4>
             </div>
           </div>
         </div>
@@ -281,17 +278,12 @@
               </div>
             </div>
             <p>
-              I had the most incredible experience using this tour and travel
-              website. From booking my flights and accommodations to discovering
-              unique local activities, everything was seamless and well-organized.
-              It made my trip stress-free and unforgettable. I can't wait to plan
-              my next adventure with them!
+              I appreciate the efforts made by CareerPath to build a network of learners. The community events and webinars provide valuable networking opportunities and enrich the overall learning experience.
             </p>
             <div class="client_card_footer">
-              <img src="assets/client-1.jpg" alt="client" />
+              <i class="ri-user-3-fill"></i>
               <div class="client_details">
-                <h4>Mike Henderson</h4>
-                <p>Business Manager & CEO</p>
+                <h4>Tom Holland</h4>
               </div>
             </div>
           </div>
@@ -307,17 +299,12 @@
               </div>
             </div>
             <p>
-              I had the most incredible experience using this tour and travel
-              website. From booking my flights and accommodations to discovering
-              unique local activities, everything was seamless and well-organized.
-              It made my trip stress-free and unforgettable. I can't wait to plan
-              my next adventure with them!
+              I've experienced occasional technical glitches when accessing the platform on mobile. Improving the mobile responsiveness could make the learning experience smoother for users on the go.
             </p>
             <div class="client_card_footer">
-              <img src="assets/client-1.jpg" alt="client" />
+              <i class="ri-user-3-fill"></i>
               <div class="client_details">
-                <h4>Mike Henderson</h4>
-                <p>Business Manager & CEO</p>
+                <h4>Mark Anthony</h4>
               </div>
             </div>
           </div>
@@ -328,26 +315,22 @@
     <footer>
       <div class="section_container footer_container">
         <div class="footer_col">
-          <h5>Wanderlust</h5>
-          <p>
-            Welcome to Wanderlust, our tour and travel website is your gateway
-            to a world of wanderlust-inducing experiences.
-          </p>
+          <h5>CareerPath</h5>
+          <p>Welcome to CareerPath, where knowledge meets innovation. We are a dedicated team of educators, technologists, and enthusiasts committed to transforming the way people learn and grow.</p>
         </div>
         <div class="footer_col">
           <h4>Quick Links</h4>
-          <a href="#home">Home</a>
-          <a href="#destination">Destinations</a>
-          <a href="#subscribe">Write to Us</a>
-          <a href="#">Contact Us</a>
-          <a href="#">Privacy Policy</a>
+          <a href="#about">About</a>
+          <a href="#courses">Courses</a>
+          <a href="#top">Top Pics</a>
+          <a href="#contact">Contact</a>
         </div>
         <div class="footer_col">
           <h4>Features</h4>
-          <a href="#">Vacation Package</a>
-          <a href="#">List of Tours</a>
-          <a href="#">Gallery</a>
-          <a href="#">Travel on a Budget</a>
+          <a href="#">Bootcamps</a>
+          <a href="#">Materials</a>
+          <a href="#">Placements</a>
+          <a href="#">Scholorships</a>
         </div>
         <div class="footer_col">
           <h4>Follow Us</h4>
@@ -368,7 +351,7 @@
         </div>
       </div>
       <div class="footer_bar">
-        Copyright © 2023 Web Design Mastery. All rights reserved.
+        Copyright © 2024 CareerPath. All rights reserved.
       </div>
     </footer>
 
